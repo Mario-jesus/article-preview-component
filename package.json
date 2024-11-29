@@ -1,0 +1,21 @@
+{
+  "name": "article-preview-component",
+  "version": "1.0.0",
+  "description": "Article preview component coding challenge",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sass": "sass src/sass/:src/css/ --watch",
+    "build:sass": "sass src/sass/:src/css/",
+    "ts": "tsc -w",
+    "build:ts": "tsc",
+    "build": "npm run build:sass && npm run build:ts"
+  },
+  "keywords": [],
+  "author": "Mario Jesús Arias Hernández",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.81.0",
+    "typescript": "^5.7.2"
+  }
+}
