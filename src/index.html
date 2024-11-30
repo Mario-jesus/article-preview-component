@@ -3,28 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Frontend Mentor | Article preview component</title>
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/normalize.css" type="text/css">
   <link rel="stylesheet" href="./css/styles.css" type="text/css">
-  <title>Frontend Mentor | Article preview component</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <script src="./js/main.js" defer></script>
 </head>
 <body>
-
-  Shift the overall look and feel by adding these wonderful 
-  touches to furniture in your home
-
-  Ever been in a room and felt like something was missing? Perhaps 
-  it felt slightly bare and uninviting. I’ve got some simple tips 
-  to help you make any room feel complete.
-
-  Michelle Appleton
-  28 Jun 2020
-
-  Share
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>. 
-    Coded by <a href="https://www.linkedin.com/in/mario-jes%C3%BAs-arias-hern%C3%A1ndez-b086b2319/" target="_blank" rel="noopener">Mario Jesús Arias Hernández</a>.
-  </div>
+  <main class="article-preview-main">
+    <section class="article-preview-card">
+      <figure class="article-preview-card__picture">
+        <img src="./assets/images/drawers.jpg" alt="drawers">
+      </figure>
+      <div class="article-preview-card__content">
+        <h3 class="article-preview-card__content-title">Shift the overall look and feel by adding these wonderful touches to furniture in your home</h3>
+        <p class="article-preview-card__content-paragraph">Ever been in a room and felt like something was missing? Perhaps it felt slightly bare and uninviting. I’ve got some simple tips to help you make any room feel complete.</p>
+        <footer class="article-preview-card__footer">
+          <figure class="article-preview-card__user">
+            <img src="./assets/images/avatar-michelle.jpg" alt="avatar-michelle" class="article-preview-card__user-profile">
+            <figcaption class="article-preview-card__user-name">Michelle Appleton</figcaption>
+            <span class="article-preview-card__user-date">28 Jun 2020</span>
+          </figure>
+          <figure class="article-preview-card__share_button" id="desktopShareButton" tabindex="0" data-active="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+            <div class="article-preview-card__share_window article-preview-card__share_window--desktop" id="desktopShareWindow">
+              <div class="article-preview-card__share_window-content">
+                <span>SHARE</span>
+                <a href="#facebook"><img src="./assets/images/icon-facebook.svg" alt="icon-facebook"></a>
+                <a href="#twitter"><img src="./assets/images/icon-twitter.svg" alt="icon-twitter"></a>
+                <a href="#pinterest"><img src="./assets/images/icon-pinterest.svg" alt="icon-pinterest"></a>
+              </div>
+            </div>
+          </figure>
+          <figure class="article-preview-card__share_button" id="movilShareButton" tabindex="0" data-active="false">
+            <svg xmlns="http://www.w3.org/2000/svg" width="15" height="13"><path fill="currentColor" d="M15 6.495L8.766.014V3.88H7.441C3.33 3.88 0 7.039 0 10.936v2.049l.589-.612C2.59 10.294 5.422 9.11 8.39 9.11h.375v3.867L15 6.495z"/></svg>
+          </figure>
+          <div class="article-preview-card__share_window article-preview-card__share_window--movil" id="movilShareWindow">
+            <div class="article-preview-card__share_window-content">
+              <span>SHARE</span>
+              <a href="#facebook"><img src="./assets/images/icon-facebook.svg" alt="icon-facebook"></a>
+              <a href="#twitter"><img src="./assets/images/icon-twitter.svg" alt="icon-twitter"></a>
+              <a href="#pinterest"><img src="./assets/images/icon-pinterest.svg" alt="icon-pinterest"></a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" rel="noopener">Frontend Mentor</a>.
+      Coded by <a href="https://www.linkedin.com/in/mario-jes%C3%BAs-arias-hern%C3%A1ndez-b086b2319/" target="_blank" rel="noopener">Mario Jesús Arias Hernández</a>.
+    </div>
+  </footer>
 </body>
 </html>
