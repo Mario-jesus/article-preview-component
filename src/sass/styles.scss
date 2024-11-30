@@ -120,13 +120,14 @@ body {
     outline: none;
     border-radius: 50%;
     cursor: pointer;
+    transition: background-color 300ms, color 300ms;
     display: grid;
     place-content: center;
     position: relative;
     z-index: 10;
   }
 
-  &__share_button[data-active="true"] {
+  &__share_button[data-active="true"], &__share_button:hover {
     background-color: $col-desaturated-dark-blue;
     color: $col-white;
   }
@@ -146,6 +147,7 @@ body {
     visibility: hidden;
     opacity: 0;
     cursor: auto;
+    transition: opacity 300ms;
     display: grid;
     align-content: center;
     position: absolute;
